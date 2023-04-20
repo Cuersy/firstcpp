@@ -8,7 +8,7 @@ using namespace std;
 int main() {
     string words[100];
     std::string sentence;
-    std::cout << "Lutfen bir cumle girin: ";
+    std::cout << "Cumlegirlan:";
     std::getline(std::cin, sentence);
     int arraysayi = 0;
     std::stringstream ss(sentence);
