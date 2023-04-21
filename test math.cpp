@@ -1,16 +1,19 @@
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
+#include<math.h>
 #include<cmath>
 #include<string>
 #include<sstream>
 using namespace std;
+int kok(int koklu);
 int test(int bir, int iki);
 int algorithm(int num);
 int decode(int num);
+int uslu(int taban, int us);
+int maya = 51;
 int main() {
 srand(time(NULL));
-
     int a;
     cout << "Example For : ";
     for (a = 5; a <= 9; a++) {
@@ -26,12 +29,20 @@ srand(time(NULL));
     int tsss = test(1600, 2541254);
     cout << tsss;
     int gets = algorithm(211111);
-    int decod = decode(211111);
+    int decod = decode(3800003);
     cout << "\n" << gets;
     cout << "\nDecoded : " << decod;
     cout << endl;
+    std::cout << "Uslu Sayi : " << uslu(5, 2) << std::endl;
+    std::cout << "Koklu Sayi : " << kok(16) << std::endl;
     return 0;
  
+}
+int kok(int koklu) {
+    return std::sqrt(koklu);
+}
+int uslu(int taban, int us) {
+    return std::pow(taban, us);
 }
 int algorithm(int num) {
     int first = num * 12;
